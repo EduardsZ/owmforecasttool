@@ -20,6 +20,11 @@ body {
   background-color: #aad;
 }
 
+.wethtile img:hover {
+  transition: .3s;
+  transform: scale(1.4);
+}
+
 #weathmes {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
