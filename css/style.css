@@ -3,7 +3,6 @@ body {
 }
 
 .wethtile {
-  /* display: inline-block; */
   width: 150px;
   height: 200px;
   margin: 10px;
@@ -12,10 +11,29 @@ body {
   border: 1px solid green;
   box-shadow: 1px 1px 10px rgba(0, 0, 20, .3);
   border-radius: 5px;
+  transition: .3s;
+  user-select: none;
+}
+
+.wethtile:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 40, .7);
+  background-color: #aad;
 }
 
 #weathmes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 932px) {
+  #weathmes {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  #weathmes {
+    grid-template-columns: auto auto auto;
+  }
 }
