@@ -15,7 +15,6 @@ function mm(id = defCity) {
 }
 
 function rw(data) {
-  console.log(data);
   if(wDiv && data.cod == 200){
     let out = '<div class="weathme">'
     out += `<h2>${data.city.name}</h2><div id="weathmes">`
