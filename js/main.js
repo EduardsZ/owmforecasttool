@@ -4,6 +4,9 @@
 const defCity = 456173;
 const kelvins = 273.15
 const wDiv = document.getElementById('weath')
+const requestWeather = setInterval(() => {
+  mm(456173)
+}, 600000);
 
 mm(456173)
 
